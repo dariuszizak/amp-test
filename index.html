@@ -76,6 +76,23 @@
         color: white;
         padding: 5px;
       }
+      @media screen and (min-width: 800px) {
+        .hamburger {
+          display: none;
+        }
+        .upperbar li {
+          display: inline-block;
+
+        }
+        .upperbar p {
+          margin: 0px;
+        }
+      }
+      @media screen and (max-width: 800px) {
+        .upperbar {
+          display: none;
+        }
+      }
     </style>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
@@ -96,6 +113,14 @@
       <div class="hamburger" role="button" on="tap:sidebar1.toggle" tabindex="0">
         ☰
       </div>
+      <ul class="upperbar">
+        <li><a href="index.html"><amp-img src="icons/home.svg" alt="Logo" width="50px" height="50px"></amp-img></a></li>
+        <li><a href="#"><amp-img src="icons/zaluzje_small.png" alt="Logo" width="50px" height="50px"></amp-img><p>Item 1</p></a></li>
+        <li><a href="#"><amp-img src="icons/roleta_kaseta_small.png" alt="Logo" width="50px" height="50px"></amp-img><p>Item 2</p></a></li>
+        <li><a href="#"><amp-img src="icons/roleta_material_small.png" alt="Logo" width="50px" height="47px"></amp-img><p>Item 3</p></a></li>
+        <li><a href="#"><amp-img src="icons/verticale_small.png" alt="Logo" width="50px" height="48px"></amp-img><p>Item 3</p></a></li>
+        <li><a href="#"><amp-img src="icons/phone2_small.png" alt="Logo" width="50px" height="42px"></amp-img><p>Contact</p></a></li>
+      </ul>
       <div class="site-name">
         AMP test site
       </div>
