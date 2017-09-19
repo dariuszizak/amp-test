@@ -60,6 +60,11 @@
         font-size: 3em;
         padding-left: 5px;
       }
+      .desktop-sidebar {
+        width: 15%;
+        float: left;
+        position: fixed;
+      }
       .logo {
         margin: 3%;
       }
@@ -102,12 +107,19 @@
         .upperbar p {
           margin: 0px;
         }
+        article {
+          width: 70%;
+          float: right;
+        }
       }
       @media screen and (max-width: 900px) {
         .upperbar {
           display: none;
         }
         .upper-logo {
+          display: none;
+        }
+        .desktop-sidebar {
           display: none;
         }
       }
@@ -163,6 +175,18 @@
       <div class="logo">
         <amp-img src="icons/logo.png" alt="Logo" width="280px" height="83px"></amp-img>
       </div>
+    <aside class="desktop-sidebar">
+      <nav>
+        <ul>
+          <li><a href="index.html"><amp-img src="icons/home.svg" alt="Logo" width="50px" height="50px"></amp-img></a></li>
+          <li><a href="#"><amp-img src="icons/zaluzje_small.png" alt="Logo" width="50px" height="50px"></amp-img><p>Item 1</p></a></li>
+          <li><a href="#"><amp-img src="icons/roleta_kaseta_small.png" alt="Logo" width="50px" height="50px"></amp-img><p>Item 2</p></a></li>
+          <li><a href="#"><amp-img src="icons/roleta_material_small.png" alt="Logo" width="50px" height="47px"></amp-img><p>Item 3</p></a></li>
+          <li><a href="#"><amp-img src="icons/verticale_small.png" alt="Logo" width="50px" height="48px"></amp-img><p>Item 3</p></a></li>
+          <li><a href="#"><amp-img src="icons/phone2_small.png" alt="Logo" width="50px" height="42px"></amp-img><p>Contact</p></a></li>
+        </ul>
+      </nav>
+    </aside>
     <article>
       <h1>Lorem ipsum</h1>
       <p>
@@ -180,8 +204,27 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </article>
-    <footer>
-      <small>&copy 2017 Company. Wszystkie prawa zastrzeżone. Kopiowanie i rozpowszechnianie bez zgody Company zabronione.</small>
-  </footer>
+    <article>
+      <h1>Lorem ipsum</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <amp-carousel layout="fixed-height" type="slides" height="100" delay="3000" loop autoplay>
+        <amp-img src="icons/home.svg" alt="Logo" width="280px" height="83px"></amp-img>
+        <amp-img src="icons/roleta_material.png" alt="Logo" width="280px" height="83px"></amp-img>
+        <amp-img src="icons/zaluzje.png" alt="Logo" width="280px" height="83px"></amp-img>
+      </amp-carousel>
+    </article>
+    <article>
+      <h1>Dolor sit amet</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </article>
+    <article>
+      <footer>
+        <small>&copy 2017 Company. Wszystkie prawa zastrzeżone. Kopiowanie i rozpowszechnianie bez zgody Company zabronione.</small>
+    </footer>
+    </article>
   </body>
 </html>
