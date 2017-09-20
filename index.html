@@ -92,13 +92,15 @@
           display: none;
         }
         .site-name {
-          display: none;
+          font-size: 1.8em;
         }
         .logo {
           display: none;
         }
         .upper-logo {
-
+          flex: 0;
+          padding-left: 10px;
+          text-align: left;
         }
         .headerbar {
           width: 85%;
@@ -138,11 +140,11 @@
       <div class="hamburger" role="button" on="tap:sidebar1.toggle" tabindex="0">
         ☰
       </div>
-      <div class="site-name">
-        AMP test site
-      </div>
       <div class="upper-logo">
         <amp-img src="icons/logo.png" alt="Logo" width="280px" height="83px"></amp-img>
+      </div>
+      <div class="site-name">
+        AMP test site
       </div>
     </header>
     <amp-sidebar id="sidebar1" layout="nodisplay" side="left">
