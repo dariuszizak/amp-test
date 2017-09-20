@@ -72,6 +72,12 @@
       .logo {
         margin: 3%;
       }
+      .back2topbtn {
+        position: fixed;
+        bottom: 5%;
+        right: 5%;
+        color: red;
+      }
       h1 {
         text-align: left;
       }
@@ -135,7 +141,7 @@
 </script>
   </head>
   <body>
-    <header class="headerbar">
+    <header id="headerbar" class="headerbar">
       <div class="hamburger" role="button" on="tap:sidebar1.toggle" tabindex="0">
         ☰
       </div>
@@ -174,6 +180,9 @@
         </ul>
       </nav>
     </aside>
+    <div class="back2topbtn">
+      <a href="#headerbar">back to top</a>
+    </div>
     <article>
       <h1>Lorem ipsum</h1>
       <p>
